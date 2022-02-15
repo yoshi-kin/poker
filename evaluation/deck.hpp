@@ -7,6 +7,13 @@
 # include <cassert>
 # include <math.h>
 # include <random>
+
+
+// #ifndef DECK_H
+// #define DECK_H
+
+#ifndef _DECK_HPP_INCLUDED_
+#define _DECK_HPP_INCLUDED_
 // # include "config.hpp"
 // using Card = std::pair<std::string, std::string>;
 // using Buckets = std::vector<PrivateBucket>;
@@ -38,6 +45,7 @@ public:
   // std::vector<PrivateBucket> private_buckets;
   Deck();
   std::vector<int> deal(int card_num);
+  void show_cards_num(); 
   void display_bit_cards();
   void display_str_cards();
   void shuffle();
@@ -47,4 +55,5 @@ private:
   std::vector<int> cards;
 };
 
+#endif
 

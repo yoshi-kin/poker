@@ -6,7 +6,7 @@
 #include <cassert>
 #include <cmath>
 #include <bitset>
-#include "lookup.hpp"
+#include "Lookup.hpp"
 
 const int prime_product_from_rankbits(int rankbits) {
   /**

@@ -1,7 +1,13 @@
 #include <iostream>
 #include <map>
 #include <vector>
-#include "lookup.cpp"
+#include "Lookup.cpp"
+
+// #ifndef EVALUATOR_H
+// #define EVALUATOR_H
+
+#ifndef _EVALUATOR_HPP_INCLUDED_
+#define _EVALUATOR_HPP_INCLUDED_
 
 class Evaluator {
 public:
@@ -19,5 +25,7 @@ private:
   // std::map<int, int (*)(std::vector<int>)> hand_size_map = {{5, five}, {6, six}, {7, seven}};
   class LookupTable table;
 };
+
+#endif
 
 

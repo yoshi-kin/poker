@@ -7,7 +7,7 @@
 # include <math.h>
 # include <random>
 # include <bitset>
-# include "deck.hpp"
+# include "Deck.hpp"
 
 Deck::Deck() {
   for (int i = 0; i < 4; i++) {
@@ -23,6 +23,10 @@ Deck::Deck() {
       cards.push_back(card_bit);
     }
   }
+}
+
+void Deck::show_cards_num() {
+  std::cout << cards.size();
 }
 
 std::vector<int> Deck::deal(int card_num) {

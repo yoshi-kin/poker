@@ -1,6 +1,12 @@
 #include <iostream>
 #include <map>
-#include "deck.cpp"
+#include "Deck.cpp"
+
+// #ifndef LOOKUP_H
+// # LOOKUP_H
+
+#ifndef _LOOKUP_HPP_INCLUDED_
+#define _LOOKUP_HPP_INCLUDED_
 
 const int MAX_STRAIGHT_FLUSH = 10;
 const int MAX_FOUR_OF_A_KIND = 166;
@@ -16,7 +22,8 @@ inline const int prime_product_from_hand(std::vector<int> bit_cards);
 inline const int prime_product_from_rankbits(int rankbits);
 
 template<class T>
-std::vector<std::vector<T>> combination(const std::vector<T>& seed, int target_size);
+std::vector<std::vector<T>> combination(
+  const std::vector<T>& seed, int target_size);
 
 class LookupTable {
 public:
@@ -45,3 +52,4 @@ private:
   int bit;
 };
 
+#endif
